@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="questions.js"></script>
+<script src="ss3qs.js"></script>
+<script src="ss1qs.js"></script>
+<script src="ss2qs.js"></script>
+<script src="time.js"></script>
+<title> Obj Exam</title>
+<meta name="viewport" content="width=device-width initial-scale=1">
+<link href="myStyle.css" rel="stylesheet" type="text/css">
+
+</style>
+</head>
+<body>
+    <div class="topnav">
+        <div class="logo">
+       <img src="schoollogo.jpg" width="70px" height="50px" alt="">
+        </div>
+        <div class="links">
+          <a href="about_us.html">ABOUT US</a> 
+          <a href="index.html" id="logout">HOME</a> 
+          <a id="std" style=" margin: 35px 10px 30px 10px; color: #ffffff;"></a>
+        </div>
+
+    </div>
+    <div class="inlog"> Fine School Academy||CBT Exam</div>
+<div id="log" style="display:block">
+<form method="POST" class="login">
+<fieldset>
+<legend> Log in with your details here to start the Exam</legend> <hr style="margin-top:0.1px;"> 
+<p style="color: #ffffff;"> Username:  <br> <br>
+<input type="text" id="uname" placeholder="Enter Your Full Name" style="width:100%" required="required"></p>
+<p style="color: #ffffff;"> Class: <br> <br>
+<select name="clas" id="clas" style="width:100%" >
+<option   value="Your Class" selected="selected">Select Your Class</option>
+<option   value="SS1">SS1</option>
+<option  value="SS2">SS2</option>
+<option  value="SS3">SS3</option>
+</select>
+</p>
+<p style="color: #ffffff;"> Password: <br> <br>
+<input type="password" id="pass" placeholder="Enter Your Password" style="width:100%" ></p>
+<input type="button" id="finish" onclick="passCheck()" value="Log in">
+<p style="color:red" id="error"></p>
+</fieldset>
+</form>
+</div>
+<div id="instruction" style="display:none" >
+<h5 style="font-size:20px; color: #ffffff;" id="ident"></h5> <hr style="margin-top:0px;">
+<h1>Instructions</h1>
+<p><i>
+<ol>
+<li>Do not come into the exam hall with your phone.</li>
+<li>All the questions carries equal marks.</li>
+<li>Time allowed for the exam is 30 minutes.</li>
+<li>Select the right answer by checking the right circled box in the options [Example:<b> A) <input type="radio" checked="checked"> Man</b>] and click the "submit" button.</li>
+<li>Remember to attempt all the questions,there is no hope of going back.</li>
+<li>Call on Your Teacher once you see your result, do not play around on your system or logout to avoid losing your scores.  </li>
+</ol>
+</i><p>
+<h3> Click on the Button Below To Start the Exam</h3>
+<h4><button id="start" onclick="start()">Start Exam</button></h4>
+</div>
+
+<div id="exam" style="display:none">
+<p id="time"></p>
+<p style="font-size:20px; font-weight:bold; padding-left:20px" id="insideq">STUDENT NAME: <span style="font-size:25px;" id="st"></span> <br/> <span id="iden"></span></p> <hr>
+<h1 id="num"></h1>
+<div id="ques"></div>
+<div id="ans"></div> <br>
+<input type="button"  style="font-size:25px; cursor:pointer;" value="Print" onclick="window.print()" id="pt"/>
+</div>
+<div class="footer"><p style="text-align:center; width:100%; font-size:15px;font-weight: bolder; color:#161615">&copy; 2018 Powered by YouGain Computers || Contact:08039648575</p></div>
+
+</body>
+</html>

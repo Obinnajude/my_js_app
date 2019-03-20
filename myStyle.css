@@ -1,0 +1,221 @@
+
+*{box-sizing:border-box;}
+body{
+background-color: #bacac8;
+}
+
+.topnav{
+	background-color:#0b0c0b;
+	color:#ffffff;
+	height: 60px;
+	top:0;
+	left: 0;
+	width:100%;
+
+	
+}
+.logo{
+	width: 70px;
+	position: absolute;
+	top:0;
+	left: 10px;
+	margin: 15px 0px 10px 40px;
+
+}
+.links{
+	position: absolute;
+	top: 0;
+	right: 5%;
+}
+.links a{
+	float: right;
+ text-decoration: none;
+color: #fafaf6;
+margin:10px;
+font-size: 15px;
+margin: 36px 10px 30px 10px;
+}
+
+
+fieldset{background-color:#04741c;
+		position:relative;
+		left:0;
+		top:0;
+		border-radius:10px;
+		box-shadow:0px 4px 8px #000000;
+		width:100%;
+		border:none;
+		color: #ffffff;
+		
+}
+div#ques{border:2px solid #000000; padding:50px;}
+legend{font-size:20px;
+		background-color:#04741c;
+		color:#ffffff;
+		text-align:center;
+		font-weight:bold;
+		border: none;
+		margin-top:25px;
+			}
+legend:hover{
+color:#a9fa13}
+@media screen and (max-width:600px){
+	fieldset{ width:90%;
+	         margin-top:30px;
+			 }
+	div#instruction{width:90%;
+	         margin:20px;}
+	div#exam{width:90%;
+		   margin:20px;}
+		   legend{font-size:10px;
+			     margin-top:20px;
+				}
+div.inlog{
+	font-size: 20px;
+	padding-top:5px;
+}
+			 
+}
+
+
+.inlog{ color:#0b6b08;
+	box-shadow:0px 2px 4px #000000;
+font-size:30px;
+text-align: center;
+height: 40px;
+background-color:#fafaf6;
+margin-bottom: 1px;
+
+
+}
+
+#log{
+background-repeat:no-repeat;
+background-size:contain;
+margin-top: 10px;}
+#clas{
+	height:40px;
+	border-radius: 5px;	
+	font-size: 20px;
+	}
+
+#uname,#pass {font-size:20px;
+	color: #000000;
+	height:40px;
+border-radius: 5px;
+}
+#uname:focus,#pass:focus,#clas:focus {font-size:30px;
+							background-color:#ffff00;
+							}
+#log p{font-size:25px;
+font-weight:bold;
+color:#000000;}
+#finish{background-color:#04741c;
+		font-size:18px;
+		text-align:center;
+         padding:7px;
+		 color:#ffffff;
+		 width:150px;
+		 border-radius: 5px;
+		 cursor:pointer;
+		 border: none;
+		 margin-left:70px;
+		 box-shadow:0px 4px 8px #000000;}
+		 
+		 #finish:hover{
+								color:#a9fa13;
+								}
+/*here is the css for the instruction*/
+
+#instruction ol{background-color:rgb(8, 8, 85);
+color:#ffffff;
+font-size:30px;
+font-weight:strong;}
+#instruction h1{color:rgb(245, 237, 237);
+font-weight:bold;
+font-size:35px;
+text-align:center;
+text-decoration:underline;
+         }
+#instruction{border:none;
+    background-color:#04741c;
+	width:100%;
+	padding:10px;
+	box-shadow:0px 4px 8px #000000;
+	margin-top: 10px;
+	}
+#instruction h3{color:red;
+font-weight:bold;
+font-size:20px;
+text-align:center;}
+#instruction #start{background-color:#0c0c69;
+padding:10px;
+font-weight:bold;
+font-size:20px;
+text-align:center;
+border-radius:8px;
+cursor:pointer;
+border: none;
+color: #fafaf6;
+}
+
+
+#instruction h4{text-align:center;}
+#instruction #start:hover{background-color:#ff0000;
+color:#ffffff;}
+
+/*question css*/
+#exam{
+		background-color:rgb(242, 248, 248);
+		box-shadow:0px 4px 8px #000000;
+		width:100%;
+		left:0;
+		top:0;
+		border: none;
+		margin:0px;
+		
+	
+}
+#ques{font-size:20px;
+border: none;}
+#ans{
+	font-size: 20px;
+	border:1px groove #0b0c0b;
+}
+
+#btn{cursor:pointer;
+	font-size:20px;
+	margin-top:20px;
+	background-color:#0000ff;
+	color:#ffffff;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 2px 4px #000000;
+		}
+#btn:hover{background-color:#ff0000;
+color:#ffffff;}
+
+#time{text-align:right;
+   font-size:30px;
+   color:#f20000;
+   text-shadow:4px 3px 30px #000000;
+   font-weight:bolder;
+   padding-right:15px;
+   padding-top:40px;
+}
+#num{padding-left:10px;
+  color:#ff0000;}
+
+#pt{padding:0;
+margin-left:10px;
+background-color:blue;
+border-radius:10px;
+ color:#ffffff;
+ font-size:20px;
+ width:110px;
+ transition: 0.4s ease-in-out;
+}
+#pt:hover{ background-color:#191a19;
+           font-size:45px;
+		   width:150px;
+		  }
